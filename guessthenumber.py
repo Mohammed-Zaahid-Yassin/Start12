@@ -6,13 +6,8 @@ attempts = 0
 print("Guess the number between 1 and 100!")
 
 while True:
-    guess = input("Enter your guess: ")
-    if not guess.isdigit():
-        print("Please enter a valid number.")
-        continue
-    guess = int(guess)
+    guess = int(input("Enter your guess: "))
     attempts += 1
-
     if guess < number:
         print("Too low! Try again.")
     elif guess > number:
